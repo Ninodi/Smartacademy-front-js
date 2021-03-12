@@ -1,23 +1,27 @@
 // task 1
 
-var a = 13
+var a = 13;
 
-var b = 15
+var b = 15;
 
-var result = a + b
+var result = a + b;
 
 if (result % 2 === 0){
     console.log("ლუწი");
 }else if(result % 2 === 1){
     console.log("კენტი");
+}else{
+    console.log("არც კენტი, არც ლუწი");
 }
 
 // task 2
 
-b = 10
+var b;
 
-h = 6
+var h;
 
-S = 1/2 * b * h
+var S = 1/2 * Math.abs(-h) * Math.abs(-b);
 
-console.log(S)
+console.log(S);
+
+
