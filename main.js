@@ -23,5 +23,20 @@ console.log(newNumb)
 
 // task 3
 
+var b = "123456789"
 
+var arrayNums = b.split('')
+
+let result = []
+
+arrayNums.forEach(each => {
+    let arrayOfEach = []
+    arrayNums.forEach(insideEach =>{
+        let powered = Number(each) ** Number(insideEach)
+        arrayOfEach.push(powered)
+    })
+    result.push(arrayOfEach)
+})
+
+console.log(result)
 
