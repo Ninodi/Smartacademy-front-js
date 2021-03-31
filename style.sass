@@ -1,0 +1,72 @@
+*
+    padding: 0
+    margin: 0
+    list-style: none
+    text-decoration: 0
+    box-sizing: border-box
+
+body
+    background-color: #454950
+
+.calculator
+    margin: 100px auto
+    width: 450px
+    height: 500px
+    border-radius: 10px
+    border: 2px solid white
+    background-color: #454950
+    .output
+        width: 100%
+        height: 100px
+        border-bottom: 1px solid #454950
+        border-top-left-radius: 10px
+        border-top-right-radius: 10px
+        background-color: #8c989e
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-end
+        #below, #above
+            margin-right: 30px
+            display: flex
+            align-items: center
+            min-width: 50px
+            height: 70px    
+            font-size: 25px
+            color: white       
+            // background-color: white
+            word-break: break-word
+    .numbers
+        width: 100%
+        height: calc(100% - 100px)
+        border-bottom-left-radius: 10px
+        border-bottom-right-radius: 10px
+        background-color: #8c989e
+        font-family: sans-serif
+        font-weight: 900
+        display: grid
+        align-items: center
+        .box
+            width: 80px
+            height: 60px
+            margin-left: 10px
+            border-radius: 80px
+            opacity: 90%
+            background-color: pink
+            display: flex
+            justify-content: center
+            align-items: center
+            cursor: pointer
+            &:hover
+                opacity: 100%
+        .clear
+            grid-column: 1 / 4
+            width: calc(100% - 30px)
+        .equals
+            grid-column: 2 / span 3
+            width: calc(100% - 30px)
+        .blue
+            background-color: #C9E1FF
+        .redish
+            // background-color: #F8697B
+            background-color: #FA445B
