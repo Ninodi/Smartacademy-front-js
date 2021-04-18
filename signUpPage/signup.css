@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.backimg {
+  width: 50%;
+  height: 100%;
+}
+
+.backimg img {
+  width: 100%;
+  height: 100%;
+  background-color: #242348;
+}
+
+.signupsec {
+  width: 50%;
+  height: 100%;
+}
+
+.signupsec_div {
+  width: 50%;
+  margin: 5% auto;
+}
+
+.welcome {
+  width: 100%;
+  margin-bottom: 36px;
+}
+
+.welcome h1 {
+  letter-spacing: 7px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 35px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  color: #43425D;
+}
+
+.welcome p {
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #4D4F5C;
+  opacity: 50%;
+}
+
+.signupdiv input {
+  font-size: 15px;
+  padding-bottom: 6px;
+  width: 100%;
+  margin-bottom: 5px;
+  border: transparent;
+  border-bottom: 2px solid #E9E9F0;
+}
+
+.signupdiv input::-webkit-input-placeholder {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #43425D;
+}
+
+.signupdiv input:-ms-input-placeholder {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #43425D;
+}
+
+.signupdiv input::-ms-input-placeholder {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #43425D;
+}
+
+.signupdiv input::placeholder {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #43425D;
+}
+
+.signupdiv input:hover {
+  border-bottom-color: #43425D;
+}
+
+.signupdiv input:active {
+  border-bottom-color: #3B86FF;
+}
+
+.signupdiv input:focus {
+  outline: none;
+}
+
+.signupdiv button {
+  display: block;
+  margin: 0 auto;
+  width: 46%;
+  height: 50px;
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-bottom: 20px;
+  background-color: #43425D;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 4px;
+  border: 1px solid #43425D;
+  cursor: pointer;
+}
+
+.signupdiv button:hover, .signupdiv button:focus {
+  outline: none;
+  background-color: #2F2E50;
+}
+
+.signupdiv button:disabled {
+  background-color: #838296;
+}
+
+.newuser, .errorbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.newuser input, .errorbar input {
+  width: 90%;
+}
+
+#last_name {
+  width: 100%;
+}
+
+.input-div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-div input {
+  border-bottom: 2px solid #E9E9F0;
+}
+
+.input-div span {
+  visibility: hidden;
+  text-transform: capitalize;
+  display: block;
+  width: 110%;
+  height: 10px;
+  color: #FF6565;
+  font-size: 14px;
+}
+
+.input-div.invalid.invalid-shown input {
+  border-bottom: 2px solid #FF6565;
+}
+
+.input-div.invalid.invalid-shown span {
+  visibility: visible;
+}
+
+.agreed {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 36px;
+}
+
+.agreed input {
+  width: 18px;
+  height: 18px;
+  margin-right: 15px;
+}
+
+.agreed label {
+  color: #43425D;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.agreed label a:hover {
+  text-decoration: underline;
+}
+
+.link {
+  display: block;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #43425D;
+  width: 100%;
+  text-decoration: underline;
+  text-align: center;
+}
+
+footer {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 19px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 11px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #43425D;
+  color: #43425D;
+  line-height: 13px;
+}
+/*# sourceMappingURL=signup.css.map */

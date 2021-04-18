@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>Smartacademy-front-js</title>
+</head>
+<body>
+    <main class="signup_main">
+        <div class="backimg">
+            <img src="../img/Group 4.png" alt="backimg">
+        </div>
+        <div class="signupsec">
+            <div class="signupsec_div">
+                <div class="welcome">
+                    <h1>Smartacademy</h1>
+                    <p>Please complete to create your account.</p>
+                </div>
+                <form class="signupdiv">
+                    <div class="newuser">
+                        <div class="input-div">
+                            <input id="name" type="text" placeholder="First name">
+                            <span class="errorname">Please, Fill The Input</span>
+                        </div>
+                        <div class="input-div">
+                            <input id="last_name" type="text" placeholder="Last name">
+                            <span class="errorname">Please, Fill The Input</span>
+                        </div>
+                    </div>
+                    <div class="input-div">
+                        <input id="username" type="text" placeholder="Username">
+                        <span class="errorname">Please, Fill The Input</span>
+                    </div>
+                    <div class="input-div">
+                        <input id="email" type="email" placeholder="Email">
+                        <span class="errorname">Please, Fill The Input</span>
+                    </div>
+                    <div class="input-div">
+                        <input id="password" type="password" placeholder="Password">
+                        <span class="errorname">Please, Fill The Input</span>
+                    </div>
+                    <div class="input-div">
+                        <input id="conf_pass" type="password" placeholder="Confirm Password">
+                        <span class="errorname">Please, Fill The Input</span>
+                    </div>
+                    <div class="agreed">
+                        <input id="check" type="checkbox">
+                        <label>I agree with <a href="#">terms and conditions</a></label>
+                    </div>
+                    <button type="submit" class="signup">
+                        Sign Up
+                    </button>
+                    <a class="link" href="../logInPage/index.html">Already have an account? Sign in.</a>
+                </form>                   
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Term of use. Privacy policy</p>
+    </footer>
+    
+    <script src="signup.js"></script>
+</body>
+</html>
