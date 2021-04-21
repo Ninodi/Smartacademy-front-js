@@ -36,13 +36,11 @@ todoBack.addEventListener('click', () => {
 })
 
 minimizeMenu.addEventListener('click', () => {
-    body.classList.add('toggledMenu')
-    body.classList.add('respo_toggle')
+    body.classList.add('toggledMenu')   
 })
 
 maximizeMenu.addEventListener('click', () => {
     body.classList.remove('toggledMenu')
-    body.classList.remove('respo_toggle')
 })
 
 
