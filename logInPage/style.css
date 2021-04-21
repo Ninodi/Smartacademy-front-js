@@ -8,6 +8,14 @@
           box-sizing: border-box;
 }
 
+.user.error span, .pass.error span {
+  visibility: visible;
+}
+
+.user.error input, .pass.error input {
+  border-bottom: 2px solid #FF6565;
+}
+
 main {
   width: 100%;
   height: 100vh;
@@ -45,8 +53,13 @@ main {
   width: 100%;
 }
 
+.loginsec_div form .user, .loginsec_div form .pass {
+  margin-bottom: 20px;
+}
+
 .loginsec_div form input {
   padding: 6px;
+  margin-bottom: 10px;
   font-size: 15px;
   width: 100%;
   height: 30px;
@@ -64,14 +77,6 @@ main {
 
 .loginsec_div form input:focus {
   outline: none;
-}
-
-.loginsec_div form input:first-child {
-  margin-bottom: 44px;
-}
-
-.loginsec_div form input:nth-child(2) {
-  margin-bottom: 36px;
 }
 
 .loginsec_div form input::-webkit-input-placeholder {
@@ -94,9 +99,16 @@ main {
   color: #43425D;
 }
 
+.loginsec_div form span {
+  padding-left: 6px;
+  color: #FF6565;
+  font-family: 'Source Sans Pro', sans-serif;
+  visibility: hidden;
+}
+
 .welcome {
   width: 100%;
-  margin-bottom: 55px;
+  margin-bottom: 30px;
 }
 
 .welcome h1 {

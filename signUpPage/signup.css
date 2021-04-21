@@ -180,6 +180,7 @@ main {
   height: 10px;
   color: #FF6565;
   font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .input-div.invalid.invalid-shown input {

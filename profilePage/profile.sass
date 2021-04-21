@@ -94,6 +94,7 @@ nav
     display: flex
     justify-content: flex-end
     flex-direction: row
+    transition: all .5s ease-in-out
 .profile_items
     width: 140px
     height: 100%
@@ -460,4 +461,91 @@ td
 @media screen and ( max-width: 1024px)
     td, th
         &:nth-child(3), &:nth-child(4), &:nth-child(5)
-            display: none !important
+            display: none 
+    td
+        &:first-child
+            width: 400px
+    .complete
+        width: 125px
+
+    .main_container
+        margin-left: 40px
+        width: 90%
+
+
+@media screen and ( max-width: 768px)
+    .todo_page
+        padding-left: unset
+
+    body.toggledMenu
+        header
+            z-index: 3
+            width: 200px
+            .logoIcon, .burger_menu
+                display: unset
+                cursor: pointer
+            .display_menu
+                display: none
+        nav 
+            ul
+            display: unset
+        .todo_page
+            padding-left: unset
+    // .left_arrow
+    //     z-index: 0
+    .main_container
+        margin-left: 50px
+
+@media screen and ( max-width: 530px)
+    .todo_page
+        transition: all .5s ease-in-out
+    .profile_bar
+        padding-left: calc( 100% - 130px )
+        position: relative
+    .edit, .delete
+        width: 40px
+    .lists
+        overflow: auto
+    header
+        height: 70px
+        width: 100px
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 5
+    .logoIcon
+        display: none !important
+    nav
+        li
+            a
+                font-size: 10px
+    .display_menu
+        transform: rotate(90deg)
+    body.toggledMenu
+        header
+            z-index: 10
+            width: 130px
+            height: 100%
+            .logoIcon, .burger_menu
+                display: unset
+                cursor: pointer
+            .display_menu
+                display: none
+        nav 
+            ul
+            display: unset
+        .todo_page
+            padding-left: unset
+
+@media screen and ( max-width: 410px)
+    .main_container
+        margin-left: 20px
+    .profile_bar 
+        li
+            transform: scale(0.8)
+            margin-right: 15px
+    .pagination
+        ul
+            margin-left: 15px
+    header
+        width: 70px

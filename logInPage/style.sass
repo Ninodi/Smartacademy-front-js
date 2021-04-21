@@ -8,6 +8,13 @@
     text-decoration: none
     box-sizing: border-box
 
+.user, .pass
+    &.error
+        span
+            visibility: visible
+        input
+            border-bottom: 2px solid #FF6565
+
 main
     width: 100%
     height: 100vh
@@ -28,8 +35,11 @@ main
     margin: 20% auto
     form
         width: 100%
+        .user, .pass
+            margin-bottom: 20px
         input
             padding: 6px
+            margin-bottom: 10px
             font-size: 15px
             width: 100%
             height: 30px
@@ -41,16 +51,22 @@ main
                 border-bottom-color: #3B86FF
             &:focus
                 outline: none
-            &:first-child
-                margin-bottom: 44px
-            &:nth-child(2)
-                margin-bottom: 36px
+            // &:first-child
+            //     margin-bottom: 44px
+            // &:nth-child(2)
+            //     margin-bottom: 36px
             &::placeholder
                 font-family: 'Source Sans Pro', sans-serif
-                color: #43425D             
+                color: #43425D  
+        span
+            padding-left: 6px
+            color: #FF6565
+            font-family: 'Source Sans Pro', sans-serif
+            visibility: hidden
+            
 .welcome
     width: 100%
-    margin-bottom: 55px
+    margin-bottom: 30px
     h1
         letter-spacing: 7px
         text-align: center

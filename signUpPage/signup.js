@@ -6,6 +6,8 @@ let email = document.getElementById('email')
 let password = document.getElementById('password')
 let confirmPass = document.getElementById('conf_pass')
 let agreeInput = document.getElementById('check')
+
+
 firstName.addEventListener('change', () => {
     checkLength(firstName)
 })

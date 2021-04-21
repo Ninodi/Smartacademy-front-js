@@ -19,8 +19,14 @@
                     <p>Welcome back! Please login to your account.</p>
                 </div>
                 <form action="">
-                    <input type="text" placeholder="Username">
-                    <input type="text" placeholder="Password">
+                    <div class="user">
+                        <input id="username" type="text" placeholder="Username">
+                        <span>Please, Enter Your Username</span>
+                    </div>
+                    <div class="pass">
+                        <input id="password" type="text" placeholder="Password">
+                        <span>Please, Enter Valid Password</span>
+                    </div>
                     <div class="check">
                         <div class="check_div">
                             <label for="">Remember me</label>
@@ -29,7 +35,7 @@
                         <a href="">Forgot Password</a>
                     </div>
                     <div class="buttons">
-                        <a class="login" href="../profilePage/profile.html">Log in</a>
+                        <a class="login" >Log in</a>
                         <a class="signup" href="../signUpPage/signup.html">Sign up</a>
                     </div>
                 </form>                   
@@ -39,5 +45,7 @@
     <footer>
         <p>Term of use. Privacy policy</p>
     </footer>
+
+    <script src="login.js"></script>
 </body>
 </html>
