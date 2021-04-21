@@ -8,6 +8,14 @@
           box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
 body.toggledMenu header {
   width: 200px;
 }
@@ -135,7 +143,7 @@ nav li:hover::before {
 
 .todo_page {
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,9 +349,7 @@ nav li:hover::before {
 
 main {
   width: 100%;
-  min-height: 100vh;
-  height: 100%;
-  background-color: #F0F0F7;
+  background-color: red;
 }
 
 .main_container {
@@ -815,6 +821,9 @@ td:first-child {
 }
 
 @media screen and (max-width: 530px) {
+  .main_container {
+    margin-left: 20px;
+  }
   .todo_page {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
@@ -872,15 +881,10 @@ td:first-child {
     margin-left: 20px;
   }
   .profile_bar li {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
     margin-right: 15px;
   }
   .pagination ul {
     margin-left: 15px;
-  }
-  header {
-    width: 70px;
   }
 }
 /*# sourceMappingURL=profile.css.map */
