@@ -31,9 +31,10 @@ let checkPassword = (el, morethan = 7) => {
     let value = el.value
     let parent = el.parentElement
 
-    if (value === '' || value.length <= morethan) {
+    if (value === '') {
         parent.classList.add('error')
-        // passError.innerText = ''
+    } else if (value.length <= morethan) {
+        parent.classList.add('error')
         passError.innerText = 'Password Must Be Longer Than 7 Characters'
     } else if (value.length > morethan) {
         parent.classList.remove('error')

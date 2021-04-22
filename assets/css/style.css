@@ -306,7 +306,7 @@ footer p {
 
 @media screen and (max-width: 600px) {
   .loginsec {
-    left: 15%;
+    left: 12%;
   }
 }
 
@@ -331,7 +331,7 @@ footer p {
   .loginsec {
     width: 100%;
     max-width: 280px;
-    left: 10%;
+    left: 6%;
   }
   .welcome h1 {
     font-size: 20px;

@@ -12,7 +12,7 @@
       let getTodos = async () => {
         let todos
         try {
-          todos = await axios.get('https://jsonplaceholder.typicode.com/todos')          
+          todos = await axios.get('http://jsonplaceholder.typicode.com/todos')          
         } catch (error) {
           console.log(error)
         } finally {
@@ -394,6 +394,6 @@
       </div>
     </div>
 
-    <script src="assets/js/profilePage.js"></script>
+    <script src="assets/js/profile.js"></script>
   </body>
 </html>
