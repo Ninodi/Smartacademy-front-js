@@ -54,6 +54,7 @@ logIn.addEventListener('click', (e) => {
     errors = [...errors]
 
     if (!errors[0]) {
-        window.location.pathname = '/profile.html'
+        window.location.pathname = './profile.html'
+        console.log('jora')
     }
 })
