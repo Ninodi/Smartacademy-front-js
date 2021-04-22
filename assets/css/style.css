@@ -190,7 +190,7 @@ main {
           justify-content: space-between;
 }
 
-.buttons a {
+.buttons a, .buttons .login {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

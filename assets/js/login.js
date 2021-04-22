@@ -1,6 +1,6 @@
 let username = document.getElementById('username')
 let password = document.getElementById('password')
-let userError = document.querySelector('.user span')
+let passError = document.querySelector('.pass span')
 let logIn = document.querySelector('.login')
 let form = document.querySelector('form')
 
@@ -33,6 +33,8 @@ let checkPassword = (el, morethan = 7) => {
 
     if (value === '' || value.length <= morethan) {
         parent.classList.add('error')
+        // passError.innerText = ''
+        passError.innerText = 'Password Must Be Longer Than 7 Characters'
     } else if (value.length > morethan) {
         parent.classList.remove('error')
     } else {
@@ -42,20 +44,16 @@ let checkPassword = (el, morethan = 7) => {
 
 
 
-form.addEventListener('submit', (e) => {
+logIn.addEventListener('click', (e) => {
     e.preventDefault()
 
     checkUsername(username, 2)
     checkPassword(password, 7)
 
-    let errors = form.querySelectorAll('error')
+    let errors = form.querySelectorAll('.error')
     errors = [...errors]
 
     if (!errors[0]) {
-        window.location.pathname = 'profilePage/profile.html'
-    } else {
-        errors.forEach((each) => {
-            each.classList.add('error')
-        })
+        window.location.pathname = 'profile.html'
     }
 })
