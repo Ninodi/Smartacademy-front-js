@@ -259,10 +259,6 @@ nav li:hover::before {
           align-items: center;
 }
 
-.profile_user li {
-  margin-right: 17px;
-}
-
 .profile_user li:last-child {
   margin-right: unset;
 }

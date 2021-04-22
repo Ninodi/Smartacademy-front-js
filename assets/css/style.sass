@@ -8,13 +8,15 @@
     text-decoration: none
     box-sizing: border-box
 
+body
+    overflow: hidden
+
 .user, .pass
     &.error
         span
             visibility: visible
         input
             border-bottom: 2px solid #FF6565
-
 main
     width: 100%
     height: 100vh
@@ -31,7 +33,8 @@ main
     width: 50%
     height: 100%
 .loginsec_div
-    width: 50%
+    width: 350px
+    min-height: 400px
     margin: 20% auto
     form
         width: 100%
@@ -157,3 +160,60 @@ footer
         color: #43425D
         line-height: 13px
 
+@media screen and ( max-width: 1024px )
+    .loginsec_div
+        padding: 20px
+
+@media screen and ( max-width: 768px )
+    .backimg
+        width: 100%
+    .loginsec
+        // background-color: red
+        height: calc( 100% - 200px )
+        position: absolute
+        top: 10%
+        left: 20%
+        width: 100%
+        max-width: 400px
+    .loginsec_div
+        margin: 50px auto
+    .welcome
+        h1,p
+            color: #fff
+    .check
+        label, a
+            color: #fff
+
+    footer
+        left: 28%
+        p
+            color: #fff
+
+@media screen and ( max-width: 600px )
+    .loginsec
+        left: 10%
+
+@media screen and ( max-width: 450px )
+    .loginsec
+        width: 100%
+        max-width: 300px
+        left: 15%
+    .loginsec_div
+        width: 100%
+        max-width: 300px
+    .welcome
+        h1
+            font-size: 25px
+        p
+            font-size: 15px
+
+@media screen and ( max-width: 370px )
+    .loginsec
+        width: 100%
+        max-width: 280px
+        left: 10%
+    .welcome
+        h1
+            font-size: 20px
+        p
+            font-size: 10px
