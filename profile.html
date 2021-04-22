@@ -12,7 +12,7 @@
       let getTodos = async () => {
         let todos
         try {
-          todos = await axios.get('http://jsonplaceholder.typicode.com/todos')          
+          todos = await axios.get('tasks.json')          
         } catch (error) {
           console.log(error)
         } finally {

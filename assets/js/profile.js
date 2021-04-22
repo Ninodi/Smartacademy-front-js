@@ -16,7 +16,8 @@ const rightArrowPag = document.querySelector('.right_arrow')
 
 
 
-arrow.addEventListener('click', () => {
+arrow.addEventListener('click', (e) => {
+    e.target.matches('.dropdown')
     dropDown.classList.toggle('selected')
 })
 
