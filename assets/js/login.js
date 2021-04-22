@@ -54,7 +54,9 @@ logIn.addEventListener('click', (e) => {
     errors = [...errors]
 
     if (!errors[0]) {
-        window.location.href = 'https://ninodi.github.io/Smartacademy-front-js/profile.html'
+        window.location.pathname = 'profile.html'
         console.log('jora')
+    } else {
+        console.log('titu')
     }
 })
