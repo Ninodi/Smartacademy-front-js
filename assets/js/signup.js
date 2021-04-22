@@ -111,7 +111,7 @@ form.addEventListener('submit', (e) => {
     invalids = [...invalids]
 
     if (!invalids[0] && agreeInput.checked) {
-        window.location.pathname = 'profile.html'
+        window.location.href = 'https://ninodi.github.io/Smartacademy-front-js/profile.html'
     } else {
         invalids.forEach((invalid) => {
             invalid.classList.add('invalid-shown')
