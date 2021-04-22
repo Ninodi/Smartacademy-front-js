@@ -261,13 +261,13 @@ footer p {
   .signupsec {
     height: calc( 100% - 200px);
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 20%;
     width: 100%;
     max-width: 400px;
   }
   .signupsec_div {
-    margin: 50px auto;
+    margin: 0px auto;
   }
   .welcome h1, .welcome p {
     color: #fff;
