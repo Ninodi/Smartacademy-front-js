@@ -62,7 +62,7 @@ main {
   margin-bottom: 20px;
 }
 
-.loginsec_div form input {
+.loginsec_div input {
   padding: 6px;
   margin-bottom: 10px;
   font-size: 15px;
@@ -72,39 +72,39 @@ main {
   border-bottom: 2px solid #E9E9F0;
 }
 
-.loginsec_div form input:hover {
+.loginsec_div input:hover {
   border-bottom-color: #43425D;
 }
 
-.loginsec_div form input:active {
+.loginsec_div input:active {
   border-bottom-color: #3B86FF;
 }
 
-.loginsec_div form input:focus {
+.loginsec_div input:focus {
   outline: none;
 }
 
-.loginsec_div form input::-webkit-input-placeholder {
+.loginsec_div input::-webkit-input-placeholder {
   font-family: 'Source Sans Pro', sans-serif;
   color: #43425D;
 }
 
-.loginsec_div form input:-ms-input-placeholder {
+.loginsec_div input:-ms-input-placeholder {
   font-family: 'Source Sans Pro', sans-serif;
   color: #43425D;
 }
 
-.loginsec_div form input::-ms-input-placeholder {
+.loginsec_div input::-ms-input-placeholder {
   font-family: 'Source Sans Pro', sans-serif;
   color: #43425D;
 }
 
-.loginsec_div form input::placeholder {
+.loginsec_div input::placeholder {
   font-family: 'Source Sans Pro', sans-serif;
   color: #43425D;
 }
 
-.loginsec_div form span {
+.loginsec_div span {
   padding-left: 6px;
   color: #FF6565;
   font-family: 'Source Sans Pro', sans-serif;
@@ -306,7 +306,7 @@ footer p {
 
 @media screen and (max-width: 600px) {
   .loginsec {
-    left: 10%;
+    left: 15%;
   }
 }
 
@@ -314,7 +314,6 @@ footer p {
   .loginsec {
     width: 100%;
     max-width: 300px;
-    left: 15%;
   }
   .loginsec_div {
     width: 100%;
