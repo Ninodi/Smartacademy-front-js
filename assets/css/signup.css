@@ -315,12 +315,15 @@ footer p {
   .signupsec {
     width: 100%;
     max-width: 280px;
-    left: 5%;
+    left: 8%;
     top: 0;
   }
   .signupsec_div {
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95);
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  footer {
+    left: 19%;
   }
   .welcome h1 {
     font-size: 20px;
