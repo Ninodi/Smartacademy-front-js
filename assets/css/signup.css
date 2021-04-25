@@ -259,7 +259,7 @@ footer p {
     width: 100%;
   }
   .signupsec {
-    height: calc( 100% - 200px);
+    height: 100%;
     position: absolute;
     top: 5%;
     left: 20%;
@@ -311,11 +311,16 @@ footer p {
   }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 380px) {
   .signupsec {
     width: 100%;
     max-width: 280px;
     left: 5%;
+    top: 0;
+  }
+  .signupsec_div {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
   }
   .welcome h1 {
     font-size: 20px;
