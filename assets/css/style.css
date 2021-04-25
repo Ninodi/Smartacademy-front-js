@@ -331,7 +331,7 @@ footer p {
   .loginsec {
     width: 100%;
     max-width: 280px;
-    left: 8%;
+    left: 10%;
     top: 0px;
     overflow-y: scroll;
   }
