@@ -329,11 +329,11 @@ footer p {
 
 @media screen and (max-width: 380px) {
   .loginsec {
+    height: calc(100% - 80px);
     width: 100%;
     max-width: 280px;
     left: 10%;
     top: 0px;
-    overflow-y: scroll;
   }
   .loginsec_div {
     margin: 0 auto;
