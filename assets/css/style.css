@@ -327,7 +327,7 @@ footer p {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .loginsec {
     width: 100%;
     max-width: 280px;
