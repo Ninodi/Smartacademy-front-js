@@ -91,7 +91,7 @@ const insertTodosInDOM = crpg => {
                 <span class="complete_state_svg"></span>
                 <p>${isCompleted ? 'Completed' : 'Incomplete'}</p>
             </td>
-            <td>jora</td>
+            <td>John Doe</td>
             <td>${new Date(Date.now()).toLocaleDateString()}</td>
             <td>${new Date(Date.now()).toLocaleDateString()}</td>
             <td class="edit_delete">
