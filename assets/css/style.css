@@ -344,5 +344,8 @@ footer p {
   .welcome p {
     font-size: 10px;
   }
+  footer {
+    left: 25%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
