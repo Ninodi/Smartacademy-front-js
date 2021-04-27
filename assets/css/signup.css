@@ -318,11 +318,18 @@ footer p {
     left: 10%;
     top: 0;
   }
+  .signupsec_div {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
   .welcome h1 {
     font-size: 20px;
   }
   .welcome p {
     font-size: 10px;
+  }
+  footer {
+    left: 22%;
   }
 }
 /*# sourceMappingURL=signup.css.map */
