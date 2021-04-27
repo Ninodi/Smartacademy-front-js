@@ -157,28 +157,57 @@ main {
 }
 
 .check_div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.check_div label {
-  font-size: 15px;
-  font-family: 'Source Sans Pro', sans-serif;
+  display: block;
+  margin-bottom: 36px;
+  cursor: pointer;
+  position: relative;
   color: #43425D;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-.check_div input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
-  margin-right: 15px;
+.check_div input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.check_div input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkmark {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #FFFFFF;
+  border: 2px solid #3B86FF;
+  border-radius: 6px;
+  visibility: visible !important;
+}
+
+.checkmark::after {
+  content: "";
+  left: 4px;
+  top: 3px;
+  width: 10px;
+  height: 7px;
+  border: solid #3B86FF;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(130deg) rotateX(180deg);
+          transform: rotate(130deg) rotateX(180deg);
+  position: absolute;
+  display: none;
+}
+
+.remember {
+  display: block;
+  visibility: visible !important;
+  color: #43425D !important;
+  margin-left: 40px;
 }
 
 .buttons {
@@ -295,6 +324,15 @@ footer p {
   }
   .check label, .check a {
     color: #fff;
+  }
+  .remember {
+    color: #fff !important;
+  }
+  .checkmark {
+    border-color: #43425D;
+  }
+  .checkmark::after {
+    border-color: #43425D;
   }
   footer {
     left: 28%;
