@@ -327,7 +327,7 @@ nav li:hover::before {
           box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
 }
 
-.dropdown.selected li {
+.dropdown.selected li, .dropdown.selected a {
   font-size: 13px;
   font-family: 'Source Sans Pro', sans-serif;
   padding-bottom: 10px;
