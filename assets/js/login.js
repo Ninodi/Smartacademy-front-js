@@ -55,9 +55,11 @@ logIn.addEventListener('click', (e) => {
     errors = [...errors]
 
     if (!errors[0]) {
-        window.location.pathname = 'Smartacademy-front-js/profile.html'
-        console.log('jora')
-    } else {
-        console.log('titu')
-    }
+        console.log(window.location.pathname)
+        if (window.location.pathname.includes('Smartacademy-front-js')) {
+            window.location.pathname = 'Smartacademy-front-js/profile.html'
+        } else {
+            window.location.pathname = '/profile.html'
+        }
+    } 
 })

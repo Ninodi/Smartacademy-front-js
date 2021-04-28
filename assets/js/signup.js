@@ -111,7 +111,11 @@ form.addEventListener('submit', (e) => {
     invalids = [...invalids]
 
     if (!invalids[0] && agreeInput.checked) {
-        window.location.pathname = 'Smartacademy-front-js/profile.html'
+        if (window.location.pathname.includes('Smartacademy-front-js')) {
+            window.location.pathname = 'Smartacademy-front-js/profile.html'
+        } else {
+            window.location.pathname = '/profile.html'
+        }
     } else {
         invalids.forEach((invalid) => {
             invalid.classList.add('invalid-shown')
