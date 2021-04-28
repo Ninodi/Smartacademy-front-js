@@ -12,7 +12,6 @@ const addInput = document.querySelector('.addInput')
 const pagUl = document.querySelector('.pagination ul')
 const leftArrowPag = document.querySelector('.left_arrow')
 const rightArrowPag = document.querySelector('.right_arrow')
-// document.querySelector('.profile_username').innerText = username
 
 
 
