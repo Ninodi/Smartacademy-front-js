@@ -909,6 +909,10 @@ td:first-child {
   .pagination ul {
     margin-left: 15px;
   }
+  .left_arrow, .right_arrow {
+    width: 100px;
+    height: 100px;
+  }
   .todo_pop {
     left: 10%;
     width: 100%;
@@ -919,10 +923,6 @@ td:first-child {
 @media screen and (max-width: 375px) {
   header {
     width: 50px;
-  }
-  .left_arrow, .right_arrow {
-    width: 100px;
-    height: 100px;
   }
 }
 /*# sourceMappingURL=profile.css.map */
